@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyO Coffee | Không gian thư giãn</title>
+    <meta name="description" content="SkyO Coffee mang đến không gian thư giãn, ấm cúng và những tách cà phê thượng hạng. Trải nghiệm ngay hôm nay.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">SKYO<span>.</span></a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#about" class="nav-link">Về chúng tôi</a></li>
+                    <li><a href="#menu" class="nav-link">Thực đơn</a></li>
+                    <li><a href="#space" class="nav-link">Không gian</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <img src="assets/images/hero.png" alt="SkyO Coffee Interior">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 class="subtitle">Chào mừng bạn đến với</h2>
+                <h1 class="title">Nơi Thời Gian<br>Lắng Đọng</h1>
+                <p class="description">Thưởng thức hương vị cà phê tinh tế trong không gian hiện đại, tràn ngập ánh sáng và cảm giác bình yên ngay giữa lòng thành phố.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Khám Phá Thực Đơn</a>
+                    <a href="#space" class="btn btn-outline">Xem Không Gian</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Cuộn xuống</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container section-container about-grid">
+                <div class="about-image">
+                    <img src="assets/images/coffee.png" alt="Nghệ thuật Latte tại SkyO">
+                    <div class="experience-badge">
+                        <span class="number">100%</span>
+                        <span class="text">Hạt Cà Phê<br>Robusta & Arabica</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="section-badge">Câu chuyện của chúng tôi</div>
+                    <h2 class="section-title">Khơi Nguồn Cảm Hứng Từ Những Điều Giản Dị</h2>
+                    <p>Tại SkyO, chúng tôi tin rằng một tách cà phê hoàn hảo không chỉ đến từ hạt cà phê chất lượng, mà còn từ không gian bạn thưởng thức nó. Giao thoa giữa nét hiện đại tối giản và màu sắc ấm cúng, SkyO là chốn dừng chân lý tưởng để bạn gác lại âu lo.</p>
+                    <p>Mỗi giọt cà phê là một bản hòa ca của hương vị tự nhiên và kĩ năng pha chế tỉ mỉ. Hãy đến và để chúng tôi chăm sóc từng cung bậc cảm xúc của bạn.</p>
+                    
+                    <ul class="features-list">
+                        <li>
+                            <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                            <div class="feature-desc">
+                                <h4>Nguyên liệu hữu cơ</h4>
+                                <span>Thân thiện và an toàn cho sức khỏe.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i class="fas fa-couch"></i></div>
+                            <div class="feature-desc">
+                                <h4>Không gian thư giãn</h4>
+                                <span>Thiết kế tối giản, ngập tràn ánh sáng.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i class="fas fa-wifi"></i></div>
+                            <div class="feature-desc">
+                                <h4>Tiện ích làm việc</h4>
+                                <span>Wifi tốc độ cao, không gian yên tĩnh.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu" id="menu">
+            <div class="container section-container">
+                <div class="section-header text-center">
+                    <div class="section-badge">Thực Đơn Trọn Vị</div>
+                    <h2 class="section-title">Hương Vị Chạm Đến Trái Tim</h2>
+                    <p class="section-subtitle">Được pha chế từ những nguyên liệu tươi ngon nhất, mang đến trải nghiệm tuyệt vời cho từng thực khách.</p>
+                </div>
+
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="coffee">Cà Phê</button>
+                    <button class="menu-tab" data-category="tea">Trà & Trái Cây</button>
+                    <button class="menu-tab" data-category="cake">Bánh Ngọt</button>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Coffee Items -->
+                    <div class="menu-item coffee" data-aos="fade-up">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Cà Phê Đen Đá / Nóng</h3>
+                                <div class="dots"></div>
+                                <span class="price">35.000₫</span>
+                            </div>
+                            <p>Cà phê Robusta rang mộc, đậm đà truyền thống</p>
+                        </div>
+                    </div>
+                    <div class="menu-item coffee">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Bạc Xỉu</h3>
+                                <div class="dots"></div>
+                                <span class="price">45.000₫</span>
+                            </div>
+                            <p>Sự kết hợp ngọt ngào giữa sữa đặc và cafe espresso</p>
+                        </div>
+                    </div>
+                    <div class="menu-item coffee highlight">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>SkyO Signature Latte <i class="fas fa-star" title="Món bán chạy"></i></h3>
+                                <div class="dots"></div>
+                                <span class="price">65.000₫</span>
+                            </div>
+                            <p>Latte nghệ thuật với lớp foam sữa mịn màng và syrup caramel tự làm</p>
+                        </div>
+                    </div>
+                    <div class="menu-item coffee">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Cold Brew Cam Sả</h3>
+                                <div class="dots"></div>
+                                <span class="price">55.000₫</span>
+                            </div>
+                            <p>Cà phê ủ lạnh thanh mát kết hợp cùng cam vàng và sả tươi</p>
+                        </div>
+                    </div>
+
+                    <!-- Tea Items -->
+                    <div class="menu-item tea hidden">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Trà Đào Cam Sả</h3>
+                                <div class="dots"></div>
+                                <span class="price">50.000₫</span>
+                            </div>
+                            <p>Trà đen hảo hạng, cam vàng, sả và những lát đào giòn ngọt</p>
+                        </div>
+                    </div>
+                    <div class="menu-item tea hidden">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Trà Vải Vạn Hoa</h3>
+                                <div class="dots"></div>
+                                <span class="price">55.000₫</span>
+                            </div>
+                            <p>Hương vị nhẹ nhàng, giải nhiệt mùa hè cực đã</p>
+                        </div>
+                    </div>
+
+                    <!-- Cake Items -->
+                    <div class="menu-item cake hidden">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Tiramisu Truyền Thống</h3>
+                                <div class="dots"></div>
+                                <span class="price">45.000₫</span>
+                            </div>
+                            <p>Bánh mềm tan, thơm mùi cà phê và cacao nguyên chất</p>
+                        </div>
+                    </div>
+                    <div class="menu-item cake hidden">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Cheesecake Chanh Dây</h3>
+                                <div class="dots"></div>
+                                <span class="price">50.000₫</span>
+                            </div>
+                            <p>Béo ngậy của phô mai hòa quyện vị chua thanh của chanh dây</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotion Section -->
+        <section class="promotion">
+            <div class="promo-container">
+                <div class="promo-content">
+                    <h2>Ưu Đãi Đặc Biệt Tháng Này</h2>
+                    <p>Nhận ngay <strong>giảm giá 20%</strong> cho mọi thức uống Combo (Nước + Bánh) khi ghé quán vào khung giờ Vàng (14:00 - 16:00) các ngày trong tuần.</p>
+                    <a href="#contact" class="btn btn-primary mt-4">Đặt Bàn Ngay</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Space Section -->
+        <section class="space" id="space">
+            <div class="container section-container">
+                <div class="section-header text-center">
+                    <div class="section-badge">Góc Nhỏ An Yên</div>
+                    <h2 class="section-title">Không Gian SkyO</h2>
+                    <p class="section-subtitle">Chút yên bình tĩnh lặng, để những câu chuyện được sẻ chia một cách trọn vẹn nhất.</p>
+                </div>
+
+                <div class="space-grid">
+                    <div class="space-card">
+                        <img src="assets/images/exterior.png" alt="Mặt tiền quán">
+                        <div class="space-card-overlay">
+                            <h3>Bên Ngoài Hiện Đại</h3>
+                        </div>
+                    </div>
+                    <div class="space-card">
+                        <img src="assets/images/hero.png" alt="Không gian làm việc">
+                        <div class="space-card-overlay">
+                            <h3>Khu Vực Ngồi Chung</h3>
+                        </div>
+                    </div>
+                    <div class="space-card">
+                        <img src="assets/images/coffee.png" alt="Góc Chill">
+                        <div class="space-card-overlay">
+                            <h3>Góc Check-in Nghệ Thuật</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">SKYO<span>.</span></a>
+                    <p>Nơi bắt đầu những ngày mới tràn đầy năng lượng và khép lại những buổi chiều dịu êm. Cảm ơn vì đã chọn chúng tôi!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Liên Hệ</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường Nguyễn Văn Linh, Quận 7, TP. HCM</li>
+                        <li><i class="fas fa-phone-alt"></i> 0909 123 456</li>
+                        <li><i class="fas fa-envelope"></i> hello@skyocoffee.vn</li>
+                    </ul>
+                </div>
+
+                <div class="footer-hours">
+                    <h3>Giờ Mở Cửa</h3>
+                    <ul>
+                        <li><span>Thứ 2 - Thứ 6:</span> 07:00 - 22:30</li>
+                        <li><span>Thứ 7 - CN:</span> 07:00 - 23:30</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SkyO Coffee. Thiết kế và phát triển. Đã đăng ký bản quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
