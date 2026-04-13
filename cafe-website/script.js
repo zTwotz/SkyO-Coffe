@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
-            if (scrollY >= sectionTop - 100) {
+            if (window.scrollY >= sectionTop - 120) {
                 current = section.getAttribute("id");
             }
         });
@@ -29,30 +29,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 2. Mobile Menu Toggle
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.querySelector(".nav-menu");
-    const icon = hamburger.querySelector("i");
-    
-    hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-        if(navMenu.classList.contains("active")){
-            icon.classList.remove("fa-bars");
-            icon.classList.add("fa-times");
-        } else {
-            icon.classList.remove("fa-times");
-            icon.classList.add("fa-bars");
-        }
-    });
-
-    // Close menu when clicking a link
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            navMenu.classList.remove("active");
-            icon.classList.remove("fa-times");
-            icon.classList.add("fa-bars");
+    // 2. Close mobile menu when clicking a link (Bootstrap adjustment)
+    const navCollapse = document.getElementById('navMenu');
+    if (navCollapse) {
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth < 992) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                    if (bsCollapse) {
+                        bsCollapse.hide();
+                    }
+                }
+            });
         });
-    });
+    }
 
     // 3. Menu Filtering Tab
     const menuTabs = document.querySelectorAll(".menu-tab");
